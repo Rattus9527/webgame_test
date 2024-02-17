@@ -1,0 +1,70 @@
+@import "./css_reset";
+
+body {
+  font-family: sans-serif;
+  background-color: #000;
+}
+.playground {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.container {
+  position: relative;
+  width: 800px;
+  height: 400px;
+  margin: 0 auto;
+  background-image: url("../img/room.png");
+  background-size: cover;
+}
+.light-switch {
+  position: absolute;
+  right: 200px;
+  top: 150px;
+  width: 20px;
+  height: 40px;
+  &:hover {
+    filter: drop-shadow(0 0 2px #ff0000);
+  }
+}
+.light {
+  position: absolute;
+  left: 180px;
+  bottom: 80px;
+  width: 100px;
+  &:hover {
+    filter: drop-shadow(0 0 2px #ff0000);
+  }
+}
+.key {
+  display: none;
+  position: absolute;
+  left: 300px;
+  bottom: 60px;
+  width: 30px;
+}
+.hint {
+  display: none;
+  position: absolute;
+  left: 100px;
+  bottom: 20px;
+  width: 600px;
+  height: 100px;
+  padding: 15px 40px;
+  border: 1px solid #000;
+  background-color: #fff;
+}
+.door {
+  position: absolute;
+  left: 350px;
+  bottom: 115px;
+  width: 100px;
+}
+.dark-background {
+  background-image: url("../img/room-darkmode.png");
+}
+.invisible {
+  display: none;
+}
